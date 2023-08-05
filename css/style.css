@@ -18,6 +18,10 @@ button{
     border-radius: 0;
     cursor: pointer;
 }
+button:hover{
+    background-color: #7B6152;
+    transition: .5s ease;
+}
 
 ul {
     list-style: none;
@@ -378,6 +382,94 @@ header {
 }
 /* TEAM END */
 
+/* FEEDBACK */
+.feedback__item{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0 16px;
+    align-items: center;
+}
+.feedback__item-videobtn{
+    position: absolute;
+    /* top: 50px;
+    left: 50px; */
+    transform: translate(-250%, 135%);
+    background: transparent;
+}
+.feedback__item-name{
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-family: 'Yeseva One', cursive;
+}
+.feedback__item-text{
+    margin-bottom: 15px;
+}
+.feedback__content{
+    padding-bottom: 110px;
+}
+.feedback__item-content{
+    padding-bottom: 70px;
+}
+.feedback__item-btn{
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+}
+.feedback__slider{
+    width: 760px;
+    overflow: hidden;
+}
+.feedback__descr{
+    margin-right: 20px;
+}
+
+.feedback__content .swiper-pagination {
+    bottom: 50px;
+}
+
+.feedback__content .swiper-pagination-bullet{
+    background-color: #BEA495;
+    width: 63px;
+    height: 4px;
+    border-radius: 0;
+
+}
+
+.swiper-pagination-bullet-active{
+    background-color: #7B6152;
+    opacity: 1;
+}
+
+
+.sertificate__slider{
+    width: 1135px;
+    overflow: hidden;
+}
+
+
+.sertificate__slider .swiper-pagination-bullet{
+    background-color: #BEA495;
+    width: 63px;
+    height: 4px;
+    border-radius: 0;
+}
+
+.sertificate__descr{
+    margin-right: 20px;
+}
+.sertificates__content{
+    padding-bottom: 114px;
+}
+
+.sertificates__content  .swiper-pagination {
+    bottom: 60px;
+}
+
+
+
+
+
+
 
 
 
@@ -416,6 +508,20 @@ width: 230px;
 
 
 /* Adaptive */
+@media (max-width:1140px) {
+    .feedback__inner{
+        grid-template-columns: 260px auto;
+    }
+    .feedback__slider{
+        width: 670px;
+    }
+    .sertificates__content img {
+        width: 280px;
+    }
+    .sertificate__slider{
+        width: 880px;
+    }
+}
 @media (max-width:1043px) {
     .steps__list{
         gap: 37px 35px;
@@ -423,6 +529,10 @@ width: 230px;
     .steps__item{
         gap: 30px;
     }
+    .section__text{
+        width: 262px;
+    }
+
 }
 @media (max-width:1041px) {
     .container{
@@ -450,14 +560,11 @@ width: 230px;
         padding-bottom: 51px;
     }
     .section__inner {
-        grid-template-columns: 290px auto;
+        grid-template-columns: 275px auto;
         gap: 0 10px;
     }
     .products__content {
         gap: 67px;
-    }
-    .section__text {
-        font-size: 10px;
     }
     .team{
         padding: 50px 0;
@@ -497,6 +604,24 @@ width: 230px;
         bottom: 8px;
         right: -6px;
     }
+    /* .feedback__descr{
+        width: 200px;
+    }
+    .feedback__descr h2{
+        font-size: 15px;
+    }
+    .feedback__descr p{
+        font-size: 10px;
+    }
+    .feedback__item-img{
+        width: 200px;
+    }
+    .feedback__item-videobtn{
+        width: 50px;
+        height: 50px;
+    } */
+
+
 
 }
 

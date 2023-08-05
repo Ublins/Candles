@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Yeseva+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -67,7 +68,7 @@
         </picture>
       </div>
     </section>
-<!-- -------------------------------------------------------- -->
+  <!-- -------------------------------------------------------- -->
     <section class="about">
       <div class="container about__inner">
         <div class="about__content">
@@ -95,7 +96,7 @@
         </ul>
       </div>
     </section>
-<!-- -------------------------------------------------------- -->
+  <!-- -------------------------------------------------------- -->
     <section class="products section">
       <div class="container section__inner">
         <div class="products__descr section__descr">
@@ -149,7 +150,7 @@
         </div>
       </div>
     </section>
-<!-- -------------------------------------------------------- -->
+  <!-- -------------------------------------------------------- -->
     <section class="steps section">
       <div class="container section__inner">
         <div class="section__descr steps__descr">
@@ -202,7 +203,7 @@
         </ol> 
       </div>
     </section>
-<!-- -------------------------------------------------------- -->
+  <!-- -------------------------------------------------------- -->
     <section class="courses section">
       <div class="container section__inner">
         <div class="section__descr">
@@ -257,57 +258,232 @@
         </div>
       </div> 
     </section>
-<!-- -------------------------------------------------------- -->
-<section class="team section">
-  <div class="container section__inner">
-    <div class="section__descr">
-      <h2 class="title team__title">Наші викладачі</h2>
-      <p class="section__text team__text">
-        Ці люди працюють разом, щоб створювати курси для вас, які допоможуть вам почати власний бізнес або хоббі.
-      </p>
-    </div>
-    <div class="team__content section__content-descr">
-      <div class="team__item">
-        <img src="./images/team/1.jpg" alt="" class="team__img">
-        <div class="team__item-box">
-          <p class="team__item-name">Викладач Богдан</p>
-          <p class="team__item-descr">Має досвід викладання і роботи 4 роки</p>
+  <!-- -------------------------------------------------------- -->
+    <section class="team section">
+      <div class="container section__inner">
+        <div class="section__descr">
+          <h2 class="title team__title">Наші викладачі</h2>
+          <p class="section__text team__text">
+            Ці люди працюють разом, щоб створювати курси для вас, які допоможуть вам почати власний бізнес або хоббі.
+          </p>
+        </div>
+        <div class="team__content section__content-descr">
+          <div class="team__item">
+            <img src="./images/team/1.jpg" alt="" class="team__img">
+            <div class="team__item-box">
+              <p class="team__item-name">Викладач Богдан</p>
+              <p class="team__item-descr">Має досвід викладання і роботи 4 роки</p>
+            </div>
+          </div>
+          <div class="team__item">
+            <img src="./images/team/2.jpg" alt="" class="team__img">
+            <div class="team__item-box">
+              <p class="team__item-name">Викладач  Анна</p>
+              <p class="team__item-descr">Має досвід викладання і роботи 6 років</p>
+            </div>
+          </div>
+          <div class="team__item">
+            <img src="./images/team/3.png" alt="" class="team__img">
+            <div class="team__item-box">
+              <p class="team__item-name">Викладач  Галина</p>
+              <p class="team__item-descr">Навчає сфері дизайну та декорування</p>
+            </div>
+          </div>
+          <div class="team__item">
+            <img src="./images/team/4.jpg" alt="" class="team__img">
+            <div class="team__item-box">
+              <p class="team__item-name">Маркетолог  Ольга</p>
+              <p class="team__item-descr">Допоможе вам з рекламою</p>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="team__item">
-        <img src="./images/team/2.jpg" alt="" class="team__img">
-        <div class="team__item-box">
-          <p class="team__item-name">Викладач  Анна</p>
-          <p class="team__item-descr">Має досвід викладання і роботи 6 років</p>
-        </div>
-      </div>
-      <div class="team__item">
-        <img src="./images/team/3.png" alt="" class="team__img">
-        <div class="team__item-box">
-          <p class="team__item-name">Викладач  Галина</p>
-          <p class="team__item-descr">Навчає сфері дизайну та декорування</p>
-        </div>
-      </div>
-      <div class="team__item">
-        <img src="./images/team/4.jpg" alt="" class="team__img">
-        <div class="team__item-box">
-          <p class="team__item-name">Маркетолог  Ольга</p>
-          <p class="team__item-descr">Допоможе вам з рекламою</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 <!-- -------------------------------------------------------- -->  
-  <section></section>
+    <section class="feedback section">
+      <div class="container section__inner feedback__inner">
+        <div class=" feedback__descr section__descr">
+          <h2 class="title">Відгуки від клієнтів</h2>
+          <p class="section__text">
+            Наші покупці мають різний вік, статус, заняття і інтереси, але у них є одна спільна риса - вони прагнуть до гармонії і знаходять радість у маленьких радощах життя, які створюють атмосферу затишку та гармонії у їхньому домі..
+          </p>
+        </div>
+        <div class="feedback__content section--decor">
+          <div class="feedback__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="feedback__item">
+                  <div class="feedback__item-video">
+                    <img src="./images/feedback/candel.png" alt="" class="feedback__item-img">
+                    <button class="feedback__item-videobtn">
+                      <img src="./images/feedback/btn.png" alt="">
+                    </button>
+                  </div>
+                  <div class="feedback__item-content">
+                    <a href="" class="feedback__item-sociallink">
+                      <img src="./images/feedback/ph_instagram-logo.png" alt="">
+                    </a>
+                    <p class="feedback__item-name">
+                      Іван Пилипенко
+                    </p>
+                    <p class="feedback__item-text">
+                      Я замовив свічку в формі сердечка на День Святого Валентина для моєї дівчини і вона була просто неймовірна! Запах був дуже приємним і романтичним, а форма сердечка була досконалою для цього свята. Моя дівчина була дуже задоволена подарунком, і я точно замовлю ще свічок від цього сайту!"
+                    </p>
+                    <button class="button feedback__item-btn">Купити цей товар</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="feedback__item">
+                  <div class="feedback__item-video">
+                    <img src="./images/feedback/candel.png" alt="" class="feedback__item-img">
+                    <button class="feedback__item-videobtn">
+                      <img src="./images/feedback/btn.png" alt="">
+                    </button>
+                  </div>
+                  <div class="feedback__item-content">
+                    <a href="" class="feedback__item-sociallink">
+                      <img src="./images/feedback/ph_instagram-logo.png" alt="">
+                    </a>
+                    <p class="feedback__item-name">
+                      Іван Пилипенко
+                    </p>
+                    <p class="feedback__item-text">
+                      Я замовив свічку в формі сердечка на День Святого Валентина для моєї дівчини і вона була просто неймовірна! Запах був дуже приємним і романтичним, а форма сердечка була досконалою для цього свята. Моя дівчина була дуже задоволена подарунком, і я точно замовлю ще свічок від цього сайту!"
+                    </p>
+                    <button class="button feedback__item-btn">Купити цей товар</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="feedback__item">
+                  <div class="feedback__item-video">
+                    <img src="./images/feedback/candel.png" alt="" class="feedback__item-img">
+                    <button class="feedback__item-videobtn">
+                      <img src="./images/feedback/btn.png" alt="">
+                    </button>
+                  </div>
+                  <div class="feedback__item-content">
+                    <a href="" class="feedback__item-sociallink">
+                      <img src="./images/feedback/ph_instagram-logo.png" alt="">
+                    </a>
+                    <p class="feedback__item-name">
+                      Іван Пилипенко
+                    </p>
+                    <p class="feedback__item-text">
+                      Я замовив свічку в формі сердечка на День Святого Валентина для моєї дівчини і вона була просто неймовірна! Запах був дуже приємним і романтичним, а форма сердечка була досконалою для цього свята. Моя дівчина була дуже задоволена подарунком, і я точно замовлю ще свічок від цього сайту!"
+                    </p>
+                    <button class="button feedback__item-btn">Купити цей товар</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="feedback__item">
+                  <div class="feedback__item-video">
+                    <img src="./images/feedback/candel.png" alt="" class="feedback__item-img">
+                    <button class="feedback__item-videobtn">
+                      <img src="./images/feedback/btn.png" alt="">
+                    </button>
+                  </div>
+                  <div class="feedback__item-content">
+                    <a href="" class="feedback__item-sociallink">
+                      <img src="./images/feedback/ph_instagram-logo.png" alt="">
+                    </a>
+                    <p class="feedback__item-name">
+                      Іван Пилипенко
+                    </p>
+                    <p class="feedback__item-text">
+                      Я замовив свічку в формі сердечка на День Святого Валентина для моєї дівчини і вона була просто неймовірна! Запах був дуже приємним і романтичним, а форма сердечка була досконалою для цього свята. Моя дівчина була дуже задоволена подарунком, і я точно замовлю ще свічок від цього сайту!"
+                    </p>
+                    <button class="button feedback__item-btn">Купити цей товар</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="sertificates section">
+      <div class="container section__inner sertificates__inner">
+        <div class="section__descr sertificate__descr">
+          <h2 class="title">Сертифікати 
+            якості</h2>
+          <p class="section__text">Сертифікати забезпечують додаткову довіру та впевненість для наших клієнтів.
+          </p>
+        </div>
+        <div class="sertificates__content  section--decor">
+          <div class="sertificate__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img class="" src="./images/sertificate/1.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img class="" src="./images/sertificate/2.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img class="" src="./images/sertificate/1.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img class="" src="./images/sertificate/2.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img class="" src="./images/sertificate/1.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img class="" src="./images/sertificate/2.jpg" alt="">
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <section class="questions section">
+      <div class="container section__inner">
+        <div class="section__descr">
+          <h2 class="title">Часті запитання</h2>
+        </div>
+        <div class="feedback__content section__content-descr"></div>
+      </div>
+    </section>
 <!-- -------------------------------------------------------- -->
   </main>
-
-
-
-
-
   <footer class="footer">
     <div class="container footer__inner">
       <a href="#" class="logo">
@@ -365,6 +541,10 @@
   </footer>
 
 
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
