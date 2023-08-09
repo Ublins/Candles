@@ -20,5 +20,37 @@ const swiperTwo = new Swiper('.sertificate__slider', {
     spaceBetween: 20,
     pagination: {
         el: '.swiper-pagination',
-    },  
+        breakpoints: {
+            1041: {
+                slidesPerView: 3,
+            },
+            640:{
+                slidesPerView: 2,
+            },
+            360:{
+                slidesPerView: 1,
+            }
+        },
+    },
+});
+
+const accordeon = document.querySelector('.accordeon');
+const accordeonTitles = document.querySelectorAll('.accordeon__title');
+
+accordeonTitles.forEach.call (accordeonTitles, function (accordeonTitle) {
+    accordeonTitle.addEventListener ('click', function () {
+
+        const currentText = accordeonTitle.parentElement.querySelector('.accordeon__text');
+
+        accordeonTitle.classList.toggle('accordeon__title--active');
+        currentText.classList.toggle('accordeon__text--visible');
+
+        if (currentText.classList.contains('accordeon__text--visible')) {
+            currentText.style.maxHeight = currentText.scrollHeight + 'px'
+        } else {
+            currentText.style.maxHeight = 0;
+        }
+
+
+    });
 });

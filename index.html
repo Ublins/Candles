@@ -28,22 +28,22 @@
         </button>
         <ul class="menu__list header__menu-list">
           <li class="menu__list-item">
-            <a href="#" class="menu__list-link">Про нас</a>
+            <a href="#about" class="menu__list-link">Про нас</a>
           </li>
           <li class="menu__list-item">
-            <a href="#" class="menu__list-link">Каталог</a>
+            <a href="#products" class="menu__list-link">Каталог</a>
           </li>
           <li class="menu__list-item">
-            <a href="#" class="menu__list-link">Команда</a>
+            <a href="#team" class="menu__list-link">Команда</a>
           </li>
           <li class="menu__list-item">
-            <a href="#" class="menu__list-link">Відгуки</a>
+            <a href="#feedback" class="menu__list-link">Відгуки</a>
           </li>
           <li class="menu__list-item">
-            <a href="#" class="menu__list-link">Курси</a>
+            <a href="#courses" class="menu__list-link">Курси</a>
           </li>
           <li class="menu__list-item">
-            <a href="#" class="menu__list-link">Контакти</a>
+            <a href="#contacts" class="menu__list-link">Контакти</a>
           </li>
         </ul>
       </nav>
@@ -59,7 +59,7 @@
           <p class="top__text">
             Створіть особливу атмосферу у своєму домі з нашою екологічно чистою та якісною продукцією зі 100% натуральної соєвого воску.
           </p>
-          <button class="top__buy">Купити</button>
+          <button class="top__buy button">Купити</button>
         </div>
         <picture class="top__img">
           <source srcset="images/section-top/top-s.png" media="(max-width: 360px)">
@@ -69,7 +69,7 @@
       </div>
     </section>
   <!-- -------------------------------------------------------- -->
-    <section class="about">
+    <section class="about" id="about">
       <div class="container about__inner">
         <div class="about__content">
           <h2 class="about__title">Про нас</h2>
@@ -97,7 +97,7 @@
       </div>
     </section>
   <!-- -------------------------------------------------------- -->
-    <section class="products section">
+    <section class="products section" id="products">
       <div class="container section__inner">
         <div class="products__descr section__descr">
           <h2 class="products__title title">Наші товари</h2>
@@ -204,8 +204,8 @@
       </div>
     </section>
   <!-- -------------------------------------------------------- -->
-    <section class="courses section">
-      <div class="container section__inner">
+    <section class="courses section" id="courses">
+      <div class="container section__inner courses__inner">
         <div class="section__descr">
           <h2 class="title">Наші курси</h2>
           <p class="section__text">
@@ -259,7 +259,7 @@
       </div> 
     </section>
   <!-- -------------------------------------------------------- -->
-    <section class="team section">
+    <section class="team section" id="team">
       <div class="container section__inner">
         <div class="section__descr">
           <h2 class="title team__title">Наші викладачі</h2>
@@ -300,7 +300,7 @@
       </div>
     </section>
 <!-- -------------------------------------------------------- -->  
-    <section class="feedback section">
+    <section class="feedback section" id="feedback">
       <div class="container section__inner feedback__inner">
         <div class=" feedback__descr section__descr">
           <h2 class="title">Відгуки від клієнтів</h2>
@@ -407,26 +407,6 @@
     </section>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <section class="sertificates section">
       <div class="container section__inner sertificates__inner">
         <div class="section__descr sertificate__descr">
@@ -466,23 +446,136 @@
     </section>
 
 
-
-
-
-
-
-
-
-
     <section class="questions section">
       <div class="container section__inner">
         <div class="section__descr">
-          <h2 class="title">Часті запитання</h2>
+          <h2 class="title  title__question">Часті запитання</h2>
         </div>
-        <div class="feedback__content section__content-descr"></div>
+        <div class="question__content">
+          <div class="accordeon">
+            <div class="accordeon__item">
+              <button class="accordeon__title">
+                Які запахи доступні для свічок?
+              </button>
+              <div class="accordeon__text">
+                <ol>
+                  <li>
+                    Ваніль - теплий, сладкий і затишний аромат, який нагадує про домашній затишок.
+                  </li>
+                  <li>
+                    Лаванда - приємний, успокійливий і релаксуючий запах, який допомагає зняти стрес і напругу.
+                  </li>
+                  <li>
+                    Рожевий грейпфрут - свіжий, фруктовий і енергійний аромат, який допомагає підняти настрій і збадьорити.
+                  </li>
+                  <li>
+                    Кедр - деревний, земний і маскулінний аромат, який надає відчуття стабільності і надійності.
+                  </li>
+                  <li>
+                    Яблуко і кориця - теплий і затишний аромат, який нагадує про зимові свята і домашність.
+                  </li>
+                </ol>
+              </div>
+            </div>
+            <div class="accordeon__item">
+              <button class="accordeon__title">
+                Як довго горять свічки?
+              </button>
+              <div class="accordeon__text">
+                <ol>
+                  <li>
+                    Ваніль - теплий, сладкий і затишний аромат, який нагадує про домашній затишок.
+                  </li>
+                  <li>
+                    Лаванда - приємний, успокійливий і релаксуючий запах, який допомагає зняти стрес і напругу.
+                  </li>
+                  <li>
+                    Рожевий грейпфрут - свіжий, фруктовий і енергійний аромат, який допомагає підняти настрій і збадьорити.
+                  </li>
+                  <li>
+                    Кедр - деревний, земний і маскулінний аромат, який надає відчуття стабільності і надійності.
+                  </li>
+                  <li>
+                    Яблуко і кориця - теплий і затишний аромат, який нагадує про зимові свята і домашність.
+                  </li>
+                </ol>
+              </div>
+            </div>
+            <div class="accordeon__item">
+              <button class="accordeon__title">
+                Чи можна зробити замовлення на індивідуальний дизайн свічки?
+              </button>
+              <div class="accordeon__text">
+                <ol>
+                  <li>
+                    Ваніль - теплий, сладкий і затишний аромат, який нагадує про домашній затишок.
+                  </li>
+                  <li>
+                    Лаванда - приємний, успокійливий і релаксуючий запах, який допомагає зняти стрес і напругу.
+                  </li>
+                  <li>
+                    Рожевий грейпфрут - свіжий, фруктовий і енергійний аромат, який допомагає підняти настрій і збадьорити.
+                  </li>
+                  <li>
+                    Кедр - деревний, земний і маскулінний аромат, який надає відчуття стабільності і надійності.
+                  </li>
+                  <li>
+                    Яблуко і кориця - теплий і затишний аромат, який нагадує про зимові свята і домашність.
+                  </li>
+                </ol>
+              </div>
+            </div>
+            <div class="accordeon__item">
+              <button class="accordeon__title">
+                Які є варіанти доставки?
+              </button>
+              <div class="accordeon__text">
+                <ol>
+                  <li>
+                    Ваніль - теплий, сладкий і затишний аромат, який нагадує про домашній затишок.
+                  </li>
+                  <li>
+                    Лаванда - приємний, успокійливий і релаксуючий запах, який допомагає зняти стрес і напругу.
+                  </li>
+                  <li>
+                    Рожевий грейпфрут - свіжий, фруктовий і енергійний аромат, який допомагає підняти настрій і збадьорити.
+                  </li>
+                  <li>
+                    Кедр - деревний, земний і маскулінний аромат, який надає відчуття стабільності і надійності.
+                  </li>
+                  <li>
+                    Яблуко і кориця - теплий і затишний аромат, який нагадує про зимові свята і домашність.
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 <!-- -------------------------------------------------------- -->
+  
+    <section class="promo">
+      <div class="container promo__inner">
+        <p class="promo__text">Купуйте більше, економте більше </p>
+        <a href="" class="promo__link">В каталог</a>
+      </div>
+    </section>
+
+    <!-- -------------------------------------------------------- -->
+
+    <section class="contacts" id="contacts">
+      <div class="container contacts__inner">
+        <form action="" class="form">
+          <p class="form__title">Підпишись на наші акції</p>
+          <input class="form__input" type="text" placeholder="Ім'я">
+          <input class="form__input" type="email" placeholder="Е-mail">
+          <button class="form__btn" type="submit">Підписатись</button>
+        </form>
+        <img src="./images/Contacts.jpg" alt="" class="contacts__img">
+      </div>
+    </section>
+    <!-- -------------------------------------------------------- -->
   </main>
   <footer class="footer">
     <div class="container footer__inner">
@@ -539,12 +632,8 @@
       </div>
     </div>
   </footer>
-
-
-
-
-
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
+
 </body>
 </html>

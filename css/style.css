@@ -1,6 +1,7 @@
 
 html {
     box-sizing: border-box;
+    margin-bottom: 0;
 }
 
 body {
@@ -10,6 +11,7 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 1.2;
+
 }
 
 button{
@@ -18,9 +20,10 @@ button{
     border-radius: 0;
     cursor: pointer;
 }
-button:hover{
+.button:hover{
     background-color: #7B6152;
     transition: .5s ease;
+    color: #FFF;
 }
 
 ul {
@@ -35,7 +38,7 @@ ul {
     margin-bottom: 15px;
     font-size: 40px;
     font-weight: 400;
-    font-family: Yeseva One;
+    font-family: 'Yeseva One', cursive;
 }
 
 .button {
@@ -110,6 +113,9 @@ header {
 .menu__list {
     display: flex;
     gap: 20px;
+}
+.menu__list-item:hover{
+    color: #ffa929;
 }
 /* HEADER END */
 
@@ -388,6 +394,7 @@ header {
     grid-template-columns: auto auto;
     gap: 0 16px;
     align-items: center;
+    align-items: center;
 }
 .feedback__item-videobtn{
     position: absolute;
@@ -464,14 +471,133 @@ header {
 .sertificates__content  .swiper-pagination {
     bottom: 60px;
 }
+/* SERTIFICATE END */
 
+/* QUESTION */
+.accordeon__item {
+    background-color: #FAFAFA;
+    margin-bottom: 10px;
+}
+.accordeon__title {
+    font-family: 'Yeseva One', cursive;
+    font-size: 16px;
+    display: block;
+    background-color: transparent;
+    padding: 16px 60px 16px 13px;
+    box-shadow: 0px 4px 11px 0px rgba(196, 174, 151, 0.20);
+    position: relative;
+    width: 100%;
+    text-align: left;
+}
+.accordeon__title::after{
+    content: '';
+    background-image: url(../images/Vector_down.png);
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 26px;
+    top: 17px;
+}
+.accordeon__text {
+    opacity: 0;
+    max-height: 0;
+    padding: 3px 40px;
+}
 
+.accordeon__text.accordeon__text--visible{
+    opacity: 1;
+}
+.accordeon__title.accordeon__title--active::after{
+    transform: rotate(180deg);
+    transition: 0.3s ease;
+}
 
+/* QUESTION END */
 
+/* PROMO */
+.promo {
+    background-image: url(../images/promo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 140px 0;
+}
+.promo__inner {
+    display: flex;
+    align-items: center;
+}
+.promo__text {
+    font-family: 'Yeseva One', cursive;
+    font-size: 40px;
+    padding-left: 56px;
+    color: #FFF;
+    width: 765px;
+    margin-right: 108px;
+}
+.promo__link {
+    color: #272727;
+    background-color: #FFBD59;
+    padding: 14px 25px 12px;
+    font-family: 'Comfortaa', cursive;
+}
+.promo__link:hover{
+    background-color: #7B6152;
+    transition: .5s ease;
+}
+/* PROMO END */
 
+/* CONTACTS */
+.contacts {
+    padding: 150px 0 50px;
+}
 
+.contacts__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.form {
+    background-color: #fff;
+    width: 664px;
+    padding: 75px 42px 67px;
+    box-shadow: 0px 4px 11px 0px rgba(199, 175, 165, 0.30);
+}
+.form__title {
+    font-size: 40px;
+    font-family: 'Yeseva One', cursive;
+    margin-bottom: 60px;
+    color: #000;
+}
+.form__input {
+    background-color: #fff;
+    border: none;
+    border-bottom: 1px solid #000;
+    width: 100%;
+    display: block;
+    margin-bottom: 15px;
+    padding: 7px 10px;
+    color: #000;;
+}
 
-
+.form__input::placeholder{
+    font-size: 14px;
+    color: #B3B3B3;
+    font-family: 'Comfortaa', cursive;
+    font-style: normal;
+    font-weight: 400;
+}
+.form__btn {
+    color: #272727;
+    background-color: #fff;
+    background-color: #FFBD59;
+    font-family: 'Comfortaa', cursive;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    margin-top: 36px;
+    padding: 17px 34px;
+}
+/* CONTACTS END */
 
 /* FOOTER */
 .footer__inner{
@@ -513,7 +639,7 @@ width: 230px;
         grid-template-columns: 260px auto;
     }
     .feedback__slider{
-        width: 670px;
+        width: 668px;
     }
     .sertificates__content img {
         width: 280px;
@@ -521,7 +647,9 @@ width: 230px;
     .sertificate__slider{
         width: 880px;
     }
+
 }
+
 @media (max-width:1043px) {
     .steps__list{
         gap: 37px 35px;
@@ -532,8 +660,22 @@ width: 230px;
     .section__text{
         width: 262px;
     }
+    .contacts__img{
+        width: 315px;
+    }
+    .promo__link{
+        min-width: 135px;
+        text-align: center;
+    }
+    .promo__text{
+        padding-left: 0;
+    }
 
 }
+
+
+
+
 @media (max-width:1041px) {
     .container{
         padding-left: 20px;
@@ -604,25 +746,23 @@ width: 230px;
         bottom: 8px;
         right: -6px;
     }
-    /* .feedback__descr{
+    .feedback__slider{
+        width: 635px;
+    }
+
+     /* .feedback__inner{
+        grid-template-columns: auto auto;
+        gap: 0 10px;
+    }
+    .feedback__descr{
         width: 200px;
     }
     .feedback__descr h2{
         font-size: 15px;
     }
-    .feedback__descr p{
-        font-size: 10px;
-    }
-    .feedback__item-img{
-        width: 200px;
-    }
-    .feedback__item-videobtn{
-        width: 50px;
-        height: 50px;
-    } */
 
 
-
+    */
 }
 
 @media (max-width:900px){
@@ -638,7 +778,7 @@ width: 230px;
         justify-content: center;
     }
     .section__inner {
-        grid-template-columns: 200px auto;
+        grid-template-columns: 275px auto;
         gap: 0 10px;
     }
     .products__content {
@@ -648,8 +788,12 @@ width: 230px;
         font-size: 15px;
     }
     .courses__prise{
-        right: 5px;
+        right: 100px;
         bottom: 2px;
+    }
+    .courses__inner{
+        grid-template-columns: 251px auto;
+        gap: 0 10px;
     }
     .team__img{
         width: 140px;
@@ -661,7 +805,7 @@ width: 230px;
         font-size: 7px;
     }
     .team__text{
-        font-size: 10px;
+        font-size: 14px;
     }
     .team__title{
         font-size: 15px;
@@ -672,6 +816,62 @@ width: 230px;
         bottom: 8px;
         right: 107px;
     }
+    .products__item-img{
+        width: 195px;
+    }
+    .courses__title{
+        left: 48px;
+        top: 120px;
+    }
+    .courses__time{
+        left: 48px;
+        top: 180px;
+    }
+    .feedback__item-btn{
+        font-size: 8px;
+        padding: 15px 20px;
+    }
+    .feedback__descr p{
+        font-size: 10px;
+    }
+    .feedback__descr h2{
+        font-size: 15px;
+    }
+    .feedback__item-img{
+        width: 200px;
+    }
+    .feedback__item-name{
+        font-size: 12px;
+    }
+    .feedback__item-text{
+        font-size: 10px;
+    }
+    .feedback__slider{
+        width: 426px;
+    }
+    /* .feedback__item{
+        grid-template-columns:  auto;
+        align-items: center;
+        align-items: center;
+    }
+    .feedback__slider{
+        width: 250px;
+        margin: 0 auto;
+    }
+    .feedback__item-img{
+        width: 250px;
+        margin: 0 auto 20px;
+    }
+    .feedback__item-video{
+        width: 250px;
+    }*/
+    .feedback__item-videobtn{
+        position: absolute;
+        bottom: 206px;
+        margin: 0 auto;
+        left: -125px;
+        width: 100px;
+    }  
 
 }
 @media (max-width:790px){
@@ -760,6 +960,9 @@ width: 230px;
     .button{
         padding: 10px 26px;
     }
+    .section__text{
+        font-size: 10px;
+    }
 
     .courses__title{
         padding: 6px;
@@ -772,8 +975,8 @@ width: 230px;
         top: 100px;
     }
     .courses__prise{
-        padding: 10px;
-        right: 0;
+        /* padding: 10px; */
+        right: 70px;
         bottom: 9px;
     }
     .team__item-box{
@@ -781,6 +984,36 @@ width: 230px;
         bottom: 8px;
         right: -10px;
     }
+    .promo__text{
+        font-size: 15px;
+    }
+    .promo__link{
+        font-size: 12px;
+    }
+    .promo {
+        padding: 67px 0;
+    }
+    .contacts__img{
+        width: 187px;
+        object-fit: cover;
+    }
+    .form {
+        width: 440px;
+        gap: 0 20px; 
+        padding: 30px 22px; 
+    }
+    .form__title{
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    .form__btn{
+        margin-top: 10px;
+    }
+    .title__question{
+        font-size: 15px;    
+    }
+
+
 
 
 }
@@ -874,6 +1107,30 @@ width: 230px;
     .about__item-text{
         display: none;
     }
+    .sertificates__content .swiper-pagination{
+        text-align: center;
+    }
+    /* .swiper-slide img{
+        width: 200px;
+    } */
+    .sertificate__slider{
+        width: 415px;
+    }
+    .feedback__item-img{
+        width: 200px;
+    }
+    .feedback__item-videobtn{
+        width: 25px;
+    }
+    .promo{
+        padding: 42px 0;
+    }
+    .contacts__img{
+        display: none;
+    }
+    .form__input::placeholder{
+        font-size: 10px;
+    }
 
 }
 @media (max-width:480px){
@@ -917,10 +1174,12 @@ width: 230px;
     }
     .steps__list{
         gap: 25px 40px;
-
     }
     .team{
         margin-bottom: 50px;
+    }
+    .contacts{
+        padding-top: 50px;
     }
 }
 @media (max-width:404px){
@@ -955,7 +1214,9 @@ width: 230px;
     .team__item-descr{
         font-size: 9px;
     }
-
+    .promo__text{
+        margin-right: 50px;
+    } 
 }
 @media (max-width:360px){
     .top__img-l{
@@ -1040,7 +1301,33 @@ width: 230px;
     .courses__content{
         margin: 0;
     }
+    .feedback__item{
+        grid-template-columns:  auto;
+        align-items: center;
+        align-items: center;
+    }
+    .feedback__slider{
+        width: 250px;
+        margin: 0 auto;
+    }
+    .feedback__item-img{
+        width: 250px;
+        margin: 0 auto 20px;
+    }
+    .feedback__item-video{
+        width: 250px;
+    }
+    .feedback__item-btn{
+        position: absolute;
+        bottom: 0;
+        margin: 0 auto;
+        left: 0;
+        max-width: 100px;
+    }
 
 } 
-
-
+@media (prefers-reduced-motion: no-preference) {
+    :root {
+        scroll-behavior: smooth;
+    }    
+}
